@@ -1,8 +1,8 @@
 
-import { useEffect } from "react"
-import { getGifs } from "../helpers/getGifs"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import GifItem from "./GifItem"
+
+import { getGifs } from "../helpers/getGifs"
 
 // eslint-disable-next-line react/prop-types
 const GifGrid = ({category}) => {
@@ -23,13 +23,16 @@ const GifGrid = ({category}) => {
 
       <h3>{category}</h3>
 
-      <ol>
+      <div className="card-grid">
         {
-          images.map(({id, title}) => (
-            <GifItem />
+          images.map((image) => (
+            <GifItem 
+              key={image.id}
+              {...image}
+            />
           ))
         }
-      </ol>
+      </div>
 
     </div>
   )
