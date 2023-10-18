@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GifItem = ({title, url, id}) => {
+export const GifItem = ({title, url, id}) => {
   
 
   return (
@@ -11,4 +11,3 @@ const GifItem = ({title, url, id}) => {
   )
 }
 
-export default GifItem
