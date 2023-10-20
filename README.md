@@ -8,4 +8,5 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-- [Link del proyecto](https://gif-app-yeyo.netlify.app)
+- [Link del proyecto con Netlify](https://gif-app-yeyo.netlify.app)
+- [Link del proyecto con GitHub Pages](https://sergio-reinoso.github.io/GifApi-React/)
