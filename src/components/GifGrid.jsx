@@ -1,5 +1,6 @@
 import {GifItem} from "./GifItem"
 import { useFetchGifs } from "../hooks/useFetchGifs";
+import PropTypes  from 'prop-types'
 
 // eslint-disable-next-line react/prop-types
 export const GifGrid = ({category}) => {
@@ -29,4 +30,8 @@ export const GifGrid = ({category}) => {
   )
 }
 
+
+GifGrid.ropTypes = {
+  category: PropTypes.string.isRequired,
+}
 
